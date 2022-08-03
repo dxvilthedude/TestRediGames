@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
         gameManager = manager;
         isActive = true;
         phase = 1;
+        ActivateNewPhase(1);
         StartCoroutine(NextPhase());
     }
 
