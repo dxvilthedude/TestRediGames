@@ -61,4 +61,9 @@ public class Menu : MonoBehaviour
         foreach (Transform child in Players.transform)
             child.GetComponent<PlayerController>().OnGameEnd();
     }
+
+    public void QuitQame()
+    {
+        Application.Quit();
+    }
 }
